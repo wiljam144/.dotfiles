@@ -1,0 +1,60 @@
+window {
+	width: 25%;
+	padding: 20;
+	background-color: #15181e;
+}
+
+inputbar {
+	border: 4;
+	padding: 4;
+	border-radius: 3;
+	border-color: #15181e;
+	background-color: #15181e;
+	text-color: #ffffff;
+}
+
+prompt {
+	background-color: #15181e;
+	text-color: #ffffff;
+}
+
+entry {
+	background-color: #15181e;
+	text-color: #ffffff;
+}
+
+mainbox {
+	background-color: #15181e;
+}
+
+case-indicator {
+	background-color: #15181e;
+}
+
+message {
+	background-color: #15181e;
+}
+
+textbox {
+	background-color: #15181e;
+}
+
+listview {
+	lines:  15;
+	background-color: #15181e;
+}
+
+element {
+	background-color: #15181e;
+}
+
+element-text {
+	padding: 7;
+	background-color: #15181e;
+	highlight: underline;
+	text-color: #ffffff;
+}
+
+element-text selected {
+	background-color: #232833;
+}
