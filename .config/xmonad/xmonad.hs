@@ -2,6 +2,7 @@ import XMonad
 
 import XMonad.Util.EZConfig
 import XMonad.Util.SpawnOnce (spawnOnce)
+import XMonad.Util.Cursor
 
 import XMonad.Hooks.EwmhDesktops
 
@@ -28,9 +29,11 @@ myLayout = avoidStruts (spacingRaw False (Border gapSize 0 gapSize 0)
 
 myStartupHook :: X ()
 myStartupHook = do
-    spawnOnce "polybar -r"
+    spawn "./.screenlayout/layout.sh"
     spawn "setxkbmap -option caps:escape -layout pl"
+    spawnOnce "polybar -r"
     spawnOnce "feh --bg-fill ~/Images/fuji.jpg"
+    setDefaultCursor xC_left_ptr
 
 myKeys = 
     [ ("M-q", kill)

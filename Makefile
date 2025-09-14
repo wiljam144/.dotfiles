@@ -5,7 +5,7 @@ default:
 	cd ~/.config/emacs && git pull
 
 first:
+	mkdir -p ~/.config
 	stow .
-	mkdir .config
-	cd config && git clone https://github.com/wiljam144
+	git clone https://github.com/wiljam144/emacs-dots ~/.config/emacs
 
